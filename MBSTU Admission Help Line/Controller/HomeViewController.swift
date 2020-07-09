@@ -23,7 +23,11 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        logoImage.image = UIImage(named: "logo.png")
+        Utilities.roundBtnFill(button: seatPlanBtnOutlet)
+        Utilities.roundBtnFill(button: resultBtnOutlet)
+        Utilities.roundBtnFill(button: vivaBtnOutlet)
+        Utilities.roundBtnFill(button: varsityWebBtnOutlet)
     }
     
     
