@@ -56,15 +56,39 @@
 		2A304A9C24B655F700B100F1 /* MBSTU Admission Help Line */ = {
 			isa = PBXGroup;
 			children = (
+				2A304AB324B656DA00B100F1 /* Model */,
+				2A304AB224B656D400B100F1 /* View */,
+				2A304AB124B656C300B100F1 /* Controller */,
 				2A304A9D24B655F700B100F1 /* AppDelegate.swift */,
 				2A304A9F24B655F700B100F1 /* SceneDelegate.swift */,
-				2A304AA124B655F700B100F1 /* ViewController.swift */,
 				2A304AA324B655F700B100F1 /* Main.storyboard */,
 				2A304AA624B655FD00B100F1 /* Assets.xcassets */,
 				2A304AA824B655FD00B100F1 /* LaunchScreen.storyboard */,
 				2A304AAB24B655FD00B100F1 /* Info.plist */,
 			);
 			path = "MBSTU Admission Help Line";
+			sourceTree = "<group>";
+		};
+		2A304AB124B656C300B100F1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2A304AA124B655F700B100F1 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2A304AB224B656D400B100F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A304AB324B656DA00B100F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
