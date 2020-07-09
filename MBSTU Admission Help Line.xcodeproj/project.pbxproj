@@ -13,6 +13,7 @@
 		2A304AA524B655F700B100F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A304AA324B655F700B100F1 /* Main.storyboard */; };
 		2A304AA724B655FD00B100F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A304AA624B655FD00B100F1 /* Assets.xcassets */; };
 		2A304AAA24B655FD00B100F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A304AA824B655FD00B100F1 /* LaunchScreen.storyboard */; };
+		2A33A41124B74B4700E57E93 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A33A41024B74B4700E57E93 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2A304AA624B655FD00B100F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A304AA924B655FD00B100F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A304AAB24B655FD00B100F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A33A41024B74B4700E57E93 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		2A304AB224B656D400B100F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A33A40F24B74B2900E57E93 /* UtilitiesView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -89,6 +92,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2A33A40F24B74B2900E57E93 /* UtilitiesView */ = {
+			isa = PBXGroup;
+			children = (
+				2A33A41024B74B4700E57E93 /* Utilities.swift */,
+			);
+			path = UtilitiesView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				2A304AA224B655F700B100F1 /* ViewController.swift in Sources */,
 				2A304A9E24B655F700B100F1 /* AppDelegate.swift in Sources */,
+				2A33A41124B74B4700E57E93 /* Utilities.swift in Sources */,
 				2A304AA024B655F700B100F1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

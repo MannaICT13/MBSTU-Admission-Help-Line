@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         
         mbstuLogoImg.image = UIImage(named: "logo.png")
         mbstuLogoImg.sizeToFit()
+        Utilities.roundBtnFill(button: enterBtnOutlet)
     }
 
     
