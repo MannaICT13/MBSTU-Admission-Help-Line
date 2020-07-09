@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -132,13 +133,59 @@
                                     <constraint firstItem="6Nc-Td-Gn8" firstAttribute="height" secondItem="BAn-FJ-UdA" secondAttribute="height" id="gyV-n9-oBW"/>
                                 </constraints>
                             </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fsw-ba-waY">
+                                <rect key="frame" x="20" y="662" width="374" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="5yg-ba-DlY"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E37-aq-KhG">
+                                    <size key="itemSize" width="374" height="204"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="kCG-oZ-OUK" customClass="AutoImageSliderCell" customModule="MBSTU_Admission_Help_Line" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="-2" width="374" height="204"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b94-Ra-BQ4">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="204"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ftL-3w-GFp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="204"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="374" height="204"/>
+                                        <connections>
+                                            <outlet property="slideImageCell" destination="ftL-3w-GFp" id="eJs-Y2-yGZ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Enk-sA-dAs" id="eM7-ya-vLB"/>
+                                    <outlet property="delegate" destination="Enk-sA-dAs" id="Uzl-30-IJY"/>
+                                </connections>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="gwb-eC-6Iz">
+                                <rect key="frame" x="20" y="825" width="374" height="37"/>
+                            </pageControl>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="eZ4-0t-2Gp" firstAttribute="trailing" secondItem="fsw-ba-waY" secondAttribute="trailing" constant="20" id="Eig-Ix-nqA"/>
                             <constraint firstItem="MU0-8Z-MbD" firstAttribute="leading" secondItem="eZ4-0t-2Gp" secondAttribute="leading" constant="20" id="Iqk-dE-iog"/>
+                            <constraint firstItem="fsw-ba-waY" firstAttribute="leading" secondItem="eZ4-0t-2Gp" secondAttribute="leading" constant="20" id="PlP-fF-xeI"/>
                             <constraint firstItem="eZ4-0t-2Gp" firstAttribute="trailing" secondItem="MU0-8Z-MbD" secondAttribute="trailing" constant="20" id="Q8K-23-H2C"/>
+                            <constraint firstItem="gwb-eC-6Iz" firstAttribute="bottom" secondItem="fsw-ba-waY" secondAttribute="bottom" id="WM3-6h-NOF"/>
+                            <constraint firstItem="fsw-ba-waY" firstAttribute="bottom" secondItem="eZ4-0t-2Gp" secondAttribute="bottom" id="XWG-RK-Wpy"/>
                             <constraint firstItem="bbh-wv-Lg6" firstAttribute="top" secondItem="eZ4-0t-2Gp" secondAttribute="top" id="cX6-Zk-FsV"/>
                             <constraint firstItem="eZ4-0t-2Gp" firstAttribute="trailing" secondItem="bbh-wv-Lg6" secondAttribute="trailing" constant="20" id="dY1-7p-RH1"/>
+                            <constraint firstItem="eZ4-0t-2Gp" firstAttribute="trailing" secondItem="gwb-eC-6Iz" secondAttribute="trailing" constant="20" id="h5J-pz-rVj"/>
+                            <constraint firstItem="gwb-eC-6Iz" firstAttribute="leading" secondItem="eZ4-0t-2Gp" secondAttribute="leading" constant="20" id="hd5-Bs-VuM"/>
                             <constraint firstItem="MU0-8Z-MbD" firstAttribute="top" secondItem="bbh-wv-Lg6" secondAttribute="bottom" constant="30" id="jQa-k7-4Xf"/>
                             <constraint firstItem="bbh-wv-Lg6" firstAttribute="leading" secondItem="eZ4-0t-2Gp" secondAttribute="leading" constant="20" id="zbq-yc-MJ4"/>
                         </constraints>
@@ -146,7 +193,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="l87-lX-en5"/>
                     <connections>
+                        <outlet property="collectionView" destination="fsw-ba-waY" id="5GH-UW-2Xy"/>
                         <outlet property="logoImage" destination="bbh-wv-Lg6" id="SxQ-LH-5Z0"/>
+                        <outlet property="pageView" destination="gwb-eC-6Iz" id="qgJ-bm-ctt"/>
                         <outlet property="resultBtnOutlet" destination="9aW-qF-QDB" id="4oA-u4-rlJ"/>
                         <outlet property="seatPlanBtnOutlet" destination="ajU-qn-Tmq" id="m7F-zT-Vic"/>
                         <outlet property="varsityWebBtnOutlet" destination="BAn-FJ-UdA" id="lJZ-rQ-fSm"/>

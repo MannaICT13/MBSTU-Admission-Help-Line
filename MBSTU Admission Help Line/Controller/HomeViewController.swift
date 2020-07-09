@@ -19,6 +19,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var vivaBtnOutlet: UIButton!
     @IBOutlet weak var varsityWebBtnOutlet: UIButton!
     
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var pageView: UIPageControl!
+    
     //MARk:- Initializers
     override func viewDidLoad() {
         super.viewDidLoad()
