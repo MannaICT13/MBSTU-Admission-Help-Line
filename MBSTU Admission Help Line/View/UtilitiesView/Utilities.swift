@@ -12,6 +12,8 @@ import UIKit
 class Utilities{
     
     
+    //MARK:- Handlers
+    
     public static func roundBtnFill(button: UIButton){
         
         button.backgroundColor = UIColor.lightGray
@@ -22,6 +24,9 @@ class Utilities{
 
         
     }
+    
+    
+    
     
     
 }
