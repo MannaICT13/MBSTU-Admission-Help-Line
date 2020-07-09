@@ -35,7 +35,7 @@ class HomeViewController: UIViewController {
         utilitieManager()
         pageView.currentPage = 0
         pageView.numberOfPages = imageArray.count
-        timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
         
     }
     
@@ -85,6 +85,11 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func varsityWebBtnAction(_ sender: Any) {
+        
+        if let url = URL(string: "https://mbstu.ac.bd/"){
+            UIApplication.shared.open(url)
+        }
+        
     }
     
     
