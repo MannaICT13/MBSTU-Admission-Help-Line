@@ -25,25 +25,60 @@ class HomeViewController: UIViewController {
     
     var imageArray : [UIImage] = [#imageLiteral(resourceName: "OldAcademic"),#imageLiteral(resourceName: "ZiaHall"),#imageLiteral(resourceName: "OldAcademic"),#imageLiteral(resourceName: "Academic-1"),#imageLiteral(resourceName: "IMG_5808(1)"),#imageLiteral(resourceName: "TeachersDorm"),#imageLiteral(resourceName: "BBSMRH-2"),#imageLiteral(resourceName: "ZiaHall"),#imageLiteral(resourceName: "OldAcademic"),#imageLiteral(resourceName: "decoration(1)"),#imageLiteral(resourceName: "admin(5)"),#imageLiteral(resourceName: "OldAcademic"),#imageLiteral(resourceName: "admin(5)"),#imageLiteral(resourceName: "prottoy71(1)")]
     
+    var timer = Timer()
+    var count = 0
     
     
     //MARk:- Initializers
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        utilitieManager()
+        pageView.currentPage = 0
+        pageView.numberOfPages = imageArray.count
+        timer = Timer.scheduledTimer(timeInterval: 1.5, target: self, selector: #selector(changeImage), userInfo: nil, repeats: true)
+        
+    }
+    
+    
+    //MARK:- Handlers
+    
+    @objc func changeImage(){
+        
+        if count < imageArray.count {
+            
+            let index = IndexPath.init(item: count, section: 0)
+            self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: true)
+            pageView.currentPage = count
+            count += 1
+            
+        }else{
+            
+            count = 0
+            let index = IndexPath.init(item: count, section: 0)
+            self.collectionView.scrollToItem(at: index, at: .centeredHorizontally, animated: false)
+            pageView.currentPage = count
+            
+        }
+        
+        
+        
+    }
+    
+    func utilitieManager(){
+        
         logoImage.image = UIImage(named: "logo.png")
         Utilities.roundBtnFill(button: seatPlanBtnOutlet)
         Utilities.roundBtnFill(button: resultBtnOutlet)
         Utilities.roundBtnFill(button: vivaBtnOutlet)
         Utilities.roundBtnFill(button: varsityWebBtnOutlet)
+        
     }
-    
-    
-    //MARK:- Handlers
 
     @IBAction func seatPlanBtnAction(_ sender: Any) {
+        
     }
     @IBAction func resultBtnAction(_ sender: Any) {
+        
     }
     
     @IBAction func vivaBtnAction(_ sender: Any) {
