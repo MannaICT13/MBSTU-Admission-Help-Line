@@ -12,7 +12,12 @@ class HomeViewController: UIViewController {
 
     //MARk:- Properties
     
+    @IBOutlet weak var logoImage: UIImageView!
     
+    @IBOutlet weak var seatPlanBtnOutlet: UIButton!
+    @IBOutlet weak var resultBtnOutlet: UIButton!
+    @IBOutlet weak var vivaBtnOutlet: UIButton!
+    @IBOutlet weak var varsityWebBtnOutlet: UIButton!
     
     //MARk:- Initializers
     override func viewDidLoad() {
@@ -24,5 +29,16 @@ class HomeViewController: UIViewController {
     
     //MARK:- Handlers
 
-
+    @IBAction func seatPlanBtnAction(_ sender: Any) {
+    }
+    @IBAction func resultBtnAction(_ sender: Any) {
+    }
+    
+    @IBAction func vivaBtnAction(_ sender: Any) {
+    }
+    
+    @IBAction func varsityWebBtnAction(_ sender: Any) {
+    }
+    
+    
 }

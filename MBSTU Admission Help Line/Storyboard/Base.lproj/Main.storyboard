@@ -71,9 +71,77 @@
                     <view key="view" contentMode="scaleToFill" id="E1h-S1-hlm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bbh-wv-Lg6">
+                                <rect key="frame" x="20" y="44" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aCm-kA-N8s"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="MU0-8Z-MbD">
+                                <rect key="frame" x="20" y="274" width="374" height="255"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajU-qn-Tmq">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="JrY-Jy-hef"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="SEAT PLAN"/>
+                                        <connections>
+                                            <action selector="seatPlanBtnAction:" destination="Enk-sA-dAs" eventType="touchUpInside" id="C3m-KZ-UIk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aW-qF-QDB">
+                                        <rect key="frame" x="0.0" y="65" width="374" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="RESULT"/>
+                                        <connections>
+                                            <action selector="resultBtnAction:" destination="Enk-sA-dAs" eventType="touchUpInside" id="33q-de-NT2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nc-Td-Gn8">
+                                        <rect key="frame" x="0.0" y="130" width="374" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="VIVA RESULT"/>
+                                        <connections>
+                                            <action selector="vivaBtnAction:" destination="Enk-sA-dAs" eventType="touchUpInside" id="4Ea-2T-F7y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BAn-FJ-UdA">
+                                        <rect key="frame" x="0.0" y="195" width="374" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="VARSITY WEB"/>
+                                        <connections>
+                                            <action selector="varsityWebBtnAction:" destination="Enk-sA-dAs" eventType="touchUpInside" id="aJQ-Az-kAZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9aW-qF-QDB" firstAttribute="height" secondItem="6Nc-Td-Gn8" secondAttribute="height" id="6YB-Ya-kiM"/>
+                                    <constraint firstItem="ajU-qn-Tmq" firstAttribute="height" secondItem="9aW-qF-QDB" secondAttribute="height" id="Jai-0Q-gT6"/>
+                                    <constraint firstItem="6Nc-Td-Gn8" firstAttribute="height" secondItem="BAn-FJ-UdA" secondAttribute="height" id="gyV-n9-oBW"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MU0-8Z-MbD" firstAttribute="leading" secondItem="eZ4-0t-2Gp" secondAttribute="leading" constant="20" id="Iqk-dE-iog"/>
+                            <constraint firstItem="eZ4-0t-2Gp" firstAttribute="trailing" secondItem="MU0-8Z-MbD" secondAttribute="trailing" constant="20" id="Q8K-23-H2C"/>
+                            <constraint firstItem="bbh-wv-Lg6" firstAttribute="top" secondItem="eZ4-0t-2Gp" secondAttribute="top" id="cX6-Zk-FsV"/>
+                            <constraint firstItem="eZ4-0t-2Gp" firstAttribute="trailing" secondItem="bbh-wv-Lg6" secondAttribute="trailing" constant="20" id="dY1-7p-RH1"/>
+                            <constraint firstItem="MU0-8Z-MbD" firstAttribute="top" secondItem="bbh-wv-Lg6" secondAttribute="bottom" constant="30" id="jQa-k7-4Xf"/>
+                            <constraint firstItem="bbh-wv-Lg6" firstAttribute="leading" secondItem="eZ4-0t-2Gp" secondAttribute="leading" constant="20" id="zbq-yc-MJ4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="eZ4-0t-2Gp"/>
                     </view>
+                    <connections>
+                        <outlet property="logoImage" destination="bbh-wv-Lg6" id="SxQ-LH-5Z0"/>
+                        <outlet property="resultBtnOutlet" destination="9aW-qF-QDB" id="4oA-u4-rlJ"/>
+                        <outlet property="seatPlanBtnOutlet" destination="ajU-qn-Tmq" id="m7F-zT-Vic"/>
+                        <outlet property="varsityWebBtnOutlet" destination="BAn-FJ-UdA" id="lJZ-rQ-fSm"/>
+                        <outlet property="vivaBtnOutlet" destination="6Nc-Td-Gn8" id="k8S-51-O5L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQH-ND-TKD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
