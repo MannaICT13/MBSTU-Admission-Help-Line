@@ -87,10 +87,20 @@ class SeatPlanViewController: UIViewController {
         
     }
     
+    
+    
     @IBAction func searchButtonAction(_ sender: Any) {
         
         guard let roll = Int((rollTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "n/a")) else {
+            
             print("Invalide Roll")
+            self.showAlert(title: "Error Alert!", msg: "Invalid Charecter or number.")
+            self.rollLbl.text?.removeAll()
+            self.buildingLbl.text?.removeAll()
+            self.roomLbl.text?.removeAll()
+            self.centerLbl.text?.removeAll()
+            self.unitTextField.text?.removeAll()
+            self.rollTextField.text?.removeAll()
             return
         }
         
@@ -113,7 +123,15 @@ class SeatPlanViewController: UIViewController {
             }
             if(found == false){
                 print("Not Found!!")
+                self.showAlert(title: "Error Message!", msg: "Not Found")
+                self.rollLbl.text?.removeAll()
+                self.buildingLbl.text?.removeAll()
+                self.roomLbl.text?.removeAll()
+                self.centerLbl.text?.removeAll()
+                self.unitTextField.text?.removeAll()
+                self.rollTextField.text?.removeAll()
             }
+            
             
         }else if((unitTextField.text?.contains("B"))!){
             var found = false
@@ -136,7 +154,15 @@ class SeatPlanViewController: UIViewController {
             
             if(found == false){
                 print("Not Found!!")
+                self.showAlert(title: "Error Message!", msg: "Not Found")
+                self.rollLbl.text?.removeAll()
+                self.buildingLbl.text?.removeAll()
+                self.roomLbl.text?.removeAll()
+                self.centerLbl.text?.removeAll()
+                self.unitTextField.text?.removeAll()
+                self.rollTextField.text?.removeAll()
             }
+            
             
             }else if ((unitTextField.text?.contains("C"))!){
     
@@ -157,6 +183,13 @@ class SeatPlanViewController: UIViewController {
             if (found == false){
                 
                 print("Not Found")
+                self.showAlert(title: "Error Message!", msg: "Not Found")
+                self.rollLbl.text?.removeAll()
+                self.buildingLbl.text?.removeAll()
+                self.roomLbl.text?.removeAll()
+                self.centerLbl.text?.removeAll()
+                self.unitTextField.text?.removeAll()
+                self.rollTextField.text?.removeAll()
             }
             
         }
@@ -196,3 +229,25 @@ extension SeatPlanViewController : UIPickerViewDelegate,UIPickerViewDataSource {
     
 }
 
+extension SeatPlanViewController {
+    
+    
+    func showAlert(title:String,msg: String){
+        
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+      
+        alert.setValue(NSAttributedString(string: alert.title!, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 25, weight: UIFont.Weight.medium), NSAttributedString.Key.foregroundColor : UIColor.red]), forKey: "attributedTitle")
+        
+        alert.setValue(NSAttributedString(string: alert.message!, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 20,weight: UIFont.Weight.medium),NSAttributedString.Key.foregroundColor :UIColor.black]), forKey: "attributedMessage")
+        
+        let ok = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
+        
+        
+        
+        
+    }
+    
+    
+}
