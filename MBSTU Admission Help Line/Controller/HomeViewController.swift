@@ -75,6 +75,8 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func seatPlanBtnAction(_ sender: Any) {
+        let seatVC = self.storyboard?.instantiateViewController(identifier: "SeatPlanViewController") as! SeatPlanViewController
+        self.navigationController?.pushViewController(seatVC, animated: true)
         
     }
     @IBAction func resultBtnAction(_ sender: Any) {

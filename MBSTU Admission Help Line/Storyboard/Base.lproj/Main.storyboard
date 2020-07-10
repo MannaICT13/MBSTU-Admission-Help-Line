@@ -220,7 +220,7 @@
         <!--Seat Plan View Controller-->
         <scene sceneID="aia-9l-F68">
             <objects>
-                <viewController id="KgL-Ks-Vao" customClass="SeatPlanViewController" customModule="MBSTU_Admission_Help_Line" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SeatPlanViewController" id="KgL-Ks-Vao" customClass="SeatPlanViewController" customModule="MBSTU_Admission_Help_Line" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dct-gv-Q8L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -271,12 +271,14 @@
                                     <constraint firstAttribute="height" constant="50" id="UAa-lB-mRC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Search"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="searchButtonAction:" destination="KgL-Ks-Vao" eventType="touchUpInside" id="ozz-sD-5DG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-Vh-JRf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9c-Vh-JRf">
                                 <rect key="frame" x="20" y="692" width="374" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>

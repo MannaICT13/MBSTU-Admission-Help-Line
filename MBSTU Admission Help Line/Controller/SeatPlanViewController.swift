@@ -13,25 +13,26 @@ class SeatPlanViewController: UIViewController {
     
     //MARK:- Properties
     @IBOutlet weak var logoImg: UIImageView!
+    
     @IBOutlet weak var unitTextField: UITextField!
-    
     @IBOutlet weak var rollTextField: UITextField!
-    
     @IBOutlet weak var searchBtnOutlet: UIButton!
-    
     @IBOutlet weak var rollLbl: UILabel!
     
     @IBOutlet weak var buildingLbl: UILabel!
-    
     @IBOutlet weak var roomLbl: UILabel!
-    
     @IBOutlet weak var centerLbl: UILabel!
     
     //MARK:- Initializers
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        logoImg.image = UIImage(named: "logo.jpg")
+        logoImg.sizeToFit()
+        
+        Utilities.roundBtnFill(button: searchBtnOutlet)
+        Utilities.borderTextField(textField: rollTextField)
+        Utilities.borderTextField(textField: unitTextField)
     }
     
     //MARK:- Handlers

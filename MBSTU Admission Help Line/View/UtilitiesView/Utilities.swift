@@ -24,7 +24,15 @@ class Utilities{
 
         
     }
-    
+    public static func borderTextField(textField : UITextField){
+        
+        
+        textField.borderStyle = .roundedRect
+        textField.clipsToBounds = true
+        textField.layer.borderWidth = 2.0
+        textField.layer.borderColor = UIColor.black.cgColor
+        textField.layer.cornerRadius = 10.0
+    }
     
     
     
