@@ -17,8 +17,8 @@ class SeatPlanViewController: UIViewController {
     @IBOutlet weak var unitTextField: UITextField!
     @IBOutlet weak var rollTextField: UITextField!
     @IBOutlet weak var searchBtnOutlet: UIButton!
+   
     @IBOutlet weak var rollLbl: UILabel!
-    
     @IBOutlet weak var buildingLbl: UILabel!
     @IBOutlet weak var roomLbl: UILabel!
     @IBOutlet weak var centerLbl: UILabel!
@@ -27,12 +27,22 @@ class SeatPlanViewController: UIViewController {
      var unitPicker : UIPickerView!
      var unitArray : [String] = ["A","B","C"]
     
+    var seatPlanResultA = [seatPlanModel]()
+    var seatPlanResultB = [seatPlanModel]()
+    var seatPlanResultC = [seatPlanModel]()
+    
     //MARK:- Initializers
     override func viewDidLoad() {
         super.viewDidLoad()
         
          manageUnitPicker()
          UtilitiesManager()
+        
+        
+        self.seatPlanResultA = Bundle.main.decode("a.json")
+        self.seatPlanResultB = Bundle.main.decode("b.json")
+        self.seatPlanResultC = Bundle.main.decode("c.json")
+        
     }
     
     //MARK:- Handlers
@@ -79,15 +89,81 @@ class SeatPlanViewController: UIViewController {
     
     @IBAction func searchButtonAction(_ sender: Any) {
         
+        guard let roll = Int((rollTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "n/a")) else {
+            print("Invalide Roll")
+            return
+        }
+        
+        if (unitTextField.text?.contains("A"))!{
+            
+            var found = false
+            for result in self.seatPlanResultA {
+                
+                if (result.roll == roll){
+                   // print("\(result.center ?? "Not Found")")
+                    self.rollLbl.text = "Roll:-\(roll)"
+                    self.buildingLbl.text = "Building:-\(result.Building ?? "N/A")"
+                    self.roomLbl.text = "Room:-\(result.Room ?? "N/A")"
+                    self.centerLbl.text = "Center:-\(result.center ?? "N/A")"
+                    found = true
+                    break
+
+                }
+
+            }
+            if(found == false){
+                print("Not Found!!")
+            }
+            
+        }else if((unitTextField.text?.contains("B"))!){
+            var found = false
+            for result in self.seatPlanResultB{
+                
+                
+                if (result.roll == roll){
+                    // print("\(result.center ?? "Not Found")")
+                    self.rollLbl.text = "Roll:-\(roll)"
+                    self.buildingLbl.text = "Building:-\(result.Building ?? "N/A")"
+                    self.roomLbl.text = "Room:-\(result.Room ?? "N/A")"
+                    self.centerLbl.text = "Center:-\(result.center ?? "N/A")"
+                    found = true
+                    break
+                    
+                }
+                
+                  
+                }
+            
+            if(found == false){
+                print("Not Found!!")
+            }
+            
+            }else if ((unitTextField.text?.contains("C"))!){
+    
+            var found = false
+               
+            for result in self.seatPlanResultC{
+                
+                if(result.roll == roll){
+                   // print("\(result.center ?? "n/a")")
+                    self.rollLbl.text = "Roll:-\(roll)"
+                    self.buildingLbl.text = "Building:-\(result.Building ?? "N/A")"
+                    self.roomLbl.text = "Room:-\(result.Room ?? "N/A")"
+                    self.centerLbl.text = "Center:-\(result.center ?? "N/A")"
+                    found = true
+                    break
+                }
+            }
+            if (found == false){
+                
+                print("Not Found")
+            }
+            
+        }
+        
+    
     }
-    
-    
-    
-    
-
-
 }
-
 extension SeatPlanViewController : UIPickerViewDelegate,UIPickerViewDataSource {
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -119,3 +195,4 @@ extension SeatPlanViewController : UIPickerViewDelegate,UIPickerViewDataSource {
     
     
 }
+
