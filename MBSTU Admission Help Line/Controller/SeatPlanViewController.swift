@@ -104,7 +104,9 @@ class SeatPlanViewController: UIViewController {
             return
         }
         
-        if (unitTextField.text?.contains("A"))!{
+        guard let unit = unitTextField.text else{return}
+        
+        if (unit.contains("A")){
             
             var found = false
             for result in self.seatPlanResultA {
@@ -133,7 +135,7 @@ class SeatPlanViewController: UIViewController {
             }
             
             
-        }else if((unitTextField.text?.contains("B"))!){
+        }else if((unit.contains("B"))){
             var found = false
             for result in self.seatPlanResultB{
                 
@@ -164,7 +166,7 @@ class SeatPlanViewController: UIViewController {
             }
             
             
-            }else if ((unitTextField.text?.contains("C"))!){
+            }else if (unit.contains("C")){
     
             var found = false
                
