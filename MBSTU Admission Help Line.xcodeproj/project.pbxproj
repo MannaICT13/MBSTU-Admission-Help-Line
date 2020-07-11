@@ -28,6 +28,8 @@
 		2A7FE3E324B9BCC000E1103A /* r_a.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E024B9BCC000E1103A /* r_a.json */; };
 		2A7FE3E424B9BCC000E1103A /* r_c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E124B9BCC000E1103A /* r_c.json */; };
 		2A7FE3E624B9D9B500E1103A /* VivaResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E524B9D9B500E1103A /* VivaResultViewController.swift */; };
+		2A7FE3EB24B9E92900E1103A /* VivaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E924B9E92900E1103A /* VivaViewCell.swift */; };
+		2A7FE3EC24B9E92900E1103A /* VivaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3EA24B9E92900E1103A /* VivaViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		2A7FE3E024B9BCC000E1103A /* r_a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r_a.json; sourceTree = "<group>"; };
 		2A7FE3E124B9BCC000E1103A /* r_c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r_c.json; sourceTree = "<group>"; };
 		2A7FE3E524B9D9B500E1103A /* VivaResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivaResultViewController.swift; sourceTree = "<group>"; };
+		2A7FE3E924B9E92900E1103A /* VivaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivaViewCell.swift; sourceTree = "<group>"; };
+		2A7FE3EA24B9E92900E1103A /* VivaViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VivaViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		2A304AB224B656D400B100F1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2A7FE3E824B9E8F400E1103A /* VivaView */,
 				2A33A41724B7B1BA00E57E93 /* HomeView */,
 				2A33A40F24B74B2900E57E93 /* UtilitiesView */,
 			);
@@ -123,6 +128,7 @@
 		2A304AB324B656DA00B100F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2A7FE3E724B9E8CE00E1103A /* VivaModel */,
 				2A7FE3DC24B9B90500E1103A /* ResultModel */,
 				2A450E8724B8FC2C00881927 /* Bundle */,
 				2A450E8024B8F27100881927 /* SeatPlanModel */,
@@ -182,6 +188,22 @@
 				2A7FE3E124B9BCC000E1103A /* r_c.json */,
 			);
 			path = ResultModel;
+			sourceTree = "<group>";
+		};
+		2A7FE3E724B9E8CE00E1103A /* VivaModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VivaModel;
+			sourceTree = "<group>";
+		};
+		2A7FE3E824B9E8F400E1103A /* VivaView */ = {
+			isa = PBXGroup;
+			children = (
+				2A7FE3E924B9E92900E1103A /* VivaViewCell.swift */,
+				2A7FE3EA24B9E92900E1103A /* VivaViewCell.xib */,
+			);
+			path = VivaView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +272,7 @@
 				2A7FE3E224B9BCC000E1103A /* r_b.json in Resources */,
 				2A450E8B24B8FD9400881927 /* c.json in Resources */,
 				2A304AA524B655F700B100F1 /* Main.storyboard in Resources */,
+				2A7FE3EC24B9E92900E1103A /* VivaViewCell.xib in Resources */,
 				2A450E8224B8F3AA00881927 /* a.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +292,7 @@
 				2A304A9E24B655F700B100F1 /* AppDelegate.swift in Sources */,
 				2A450E8624B8F71700881927 /* SeatPlanModel.swift in Sources */,
 				2A3B555124B9B12D00A4E7DA /* ResultViewController.swift in Sources */,
+				2A7FE3EB24B9E92900E1103A /* VivaViewCell.swift in Sources */,
 				2A33A41924B7B20F00E57E93 /* AutoImageSliderCell.swift in Sources */,
 				2A33A41124B74B4700E57E93 /* Utilities.swift in Sources */,
 				2A304AA024B655F700B100F1 /* SceneDelegate.swift in Sources */,

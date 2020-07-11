@@ -488,14 +488,31 @@
                                     <action selector="searchBtnAction:" destination="1hq-gg-rzE" eventType="touchUpInside" id="GJT-A4-z4O"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-y5-5nt">
+                                <rect key="frame" x="0.0" y="202" width="414" height="660"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Result Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSx-WD-yA6">
+                                <rect key="frame" x="20" y="174" width="374" height="20"/>
+                                <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="XTo-Ll-ph1" firstAttribute="trailing" secondItem="n6C-zD-iqm" secondAttribute="trailing" constant="20" id="3Kv-Bm-Ffz"/>
                             <constraint firstItem="vel-ix-DDe" firstAttribute="leading" secondItem="XTo-Ll-ph1" secondAttribute="leading" constant="20" id="As9-vL-hS3"/>
+                            <constraint firstItem="XTo-Ll-ph1" firstAttribute="bottom" secondItem="0pk-y5-5nt" secondAttribute="bottom" id="Gme-pe-90h"/>
+                            <constraint firstItem="fSx-WD-yA6" firstAttribute="top" secondItem="vel-ix-DDe" secondAttribute="bottom" constant="10" id="RVu-14-pJ3"/>
+                            <constraint firstItem="XTo-Ll-ph1" firstAttribute="trailing" secondItem="0pk-y5-5nt" secondAttribute="trailing" id="WXj-xk-ezB"/>
                             <constraint firstItem="n6C-zD-iqm" firstAttribute="top" secondItem="XTo-Ll-ph1" secondAttribute="top" id="XM8-p7-hVq"/>
+                            <constraint firstItem="0pk-y5-5nt" firstAttribute="top" secondItem="fSx-WD-yA6" secondAttribute="bottom" constant="8" symbolic="YES" id="XTL-uF-ZXj"/>
                             <constraint firstItem="vel-ix-DDe" firstAttribute="top" secondItem="n6C-zD-iqm" secondAttribute="bottom" constant="20" id="adj-98-ba5"/>
+                            <constraint firstItem="0pk-y5-5nt" firstAttribute="leading" secondItem="XTo-Ll-ph1" secondAttribute="leading" id="awZ-g4-O2l"/>
                             <constraint firstItem="XTo-Ll-ph1" firstAttribute="trailing" secondItem="vel-ix-DDe" secondAttribute="trailing" constant="20" id="f6A-f1-6Ps"/>
+                            <constraint firstItem="XTo-Ll-ph1" firstAttribute="trailing" secondItem="fSx-WD-yA6" secondAttribute="trailing" constant="20" id="f8l-hF-jY5"/>
+                            <constraint firstItem="fSx-WD-yA6" firstAttribute="leading" secondItem="XTo-Ll-ph1" secondAttribute="leading" constant="20" id="kbF-qD-ENU"/>
                             <constraint firstItem="n6C-zD-iqm" firstAttribute="leading" secondItem="XTo-Ll-ph1" secondAttribute="leading" constant="20" id="vbU-0T-gQJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XTo-Ll-ph1"/>
