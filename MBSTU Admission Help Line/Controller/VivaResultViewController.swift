@@ -12,10 +12,13 @@ class VivaResultViewController: UIViewController {
 
     //MARK:- Properties
     
-    @IBOutlet weak var unitTextField: UITextField!
-    @IBOutlet weak var searchBtnOutlet: UIButton!
     
+    @IBOutlet weak var segmentView: UISegmentedControl!
     @IBOutlet weak var tableView: UITableView!
+    
+    var vivaResultA = [VivaResultModel]()
+    var vivaResultB = [VivaResultModel]()
+    var vivaResultC = [VivaResultModel]()
     
     
     //MARK:-  Initializers
@@ -24,16 +27,18 @@ class VivaResultViewController: UIViewController {
         super.viewDidLoad()
         
         
+        vivaResultA = Bundle.main.decode("v_a.json")
+        vivaResultB = Bundle.main.decode("v_b.json")
+        vivaResultC = Bundle.main.decode("v_c.json")
+        
+        
         self.tableView.register(UINib(nibName: "VivaViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-
-     
-        Utilities.borderTextField(textField: unitTextField)
-        Utilities.roundBtnFill(button: searchBtnOutlet)
     }
     
     //MARK:- Handlers
     
     @IBAction func searchBtnAction(_ sender: Any) {
+        
        
     }
     
