@@ -86,6 +86,8 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func vivaBtnAction(_ sender: Any) {
+        let vivaVC = self.storyboard?.instantiateViewController(identifier: "VivaResultViewController") as! VivaResultViewController
+        self.navigationController?.pushViewController(vivaVC, animated: true)
     }
     
     @IBAction func varsityWebBtnAction(_ sender: Any) {

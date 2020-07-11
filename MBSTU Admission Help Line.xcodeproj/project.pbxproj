@@ -27,6 +27,7 @@
 		2A7FE3E224B9BCC000E1103A /* r_b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3DF24B9BCC000E1103A /* r_b.json */; };
 		2A7FE3E324B9BCC000E1103A /* r_a.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E024B9BCC000E1103A /* r_a.json */; };
 		2A7FE3E424B9BCC000E1103A /* r_c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E124B9BCC000E1103A /* r_c.json */; };
+		2A7FE3E624B9D9B500E1103A /* VivaResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E524B9D9B500E1103A /* VivaResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		2A7FE3DF24B9BCC000E1103A /* r_b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r_b.json; sourceTree = "<group>"; };
 		2A7FE3E024B9BCC000E1103A /* r_a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r_a.json; sourceTree = "<group>"; };
 		2A7FE3E124B9BCC000E1103A /* r_c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r_c.json; sourceTree = "<group>"; };
+		2A7FE3E524B9D9B500E1103A /* VivaResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivaResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				2A33A41324B7525200E57E93 /* HomeViewController.swift */,
 				2A450E7E24B8E04400881927 /* SeatPlanViewController.swift */,
 				2A3B555024B9B12D00A4E7DA /* ResultViewController.swift */,
+				2A7FE3E524B9D9B500E1103A /* VivaResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A33A41424B7525200E57E93 /* HomeViewController.swift in Sources */,
+				2A7FE3E624B9D9B500E1103A /* VivaResultViewController.swift in Sources */,
 				2A7FE3DE24B9B92500E1103A /* ResultMode.swift in Sources */,
 				2A450E8424B8F42A00881927 /* Bundle.swift in Sources */,
 				2A304AA224B655F700B100F1 /* ViewController.swift in Sources */,

@@ -459,6 +459,21 @@
             </objects>
             <point key="canvasLocation" x="4037.68115942029" y="5.3571428571428568"/>
         </scene>
+        <!--Viva Result View Controller-->
+        <scene sceneID="lEu-Bh-T7O">
+            <objects>
+                <viewController storyboardIdentifier="VivaResultViewController" id="1hq-gg-rzE" customClass="VivaResultViewController" customModule="MBSTU_Admission_Help_Line" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K9F-Uj-2Nb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XTo-Ll-ph1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qY-A3-2VC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4843" y="15"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZdJ-cp-cTM">
             <objects>
