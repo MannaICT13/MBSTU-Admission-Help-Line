@@ -466,13 +466,48 @@
                     <view key="view" contentMode="scaleToFill" id="K9F-Uj-2Nb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Select Your Unit" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="n6C-zD-iqm">
+                                <rect key="frame" x="20" y="44" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Le1-YH-Epf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vel-ix-DDe">
+                                <rect key="frame" x="20" y="114" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HTZ-Cg-w6X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="searchBtnAction:" destination="1hq-gg-rzE" eventType="touchUpInside" id="GJT-A4-z4O"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="XTo-Ll-ph1" firstAttribute="trailing" secondItem="n6C-zD-iqm" secondAttribute="trailing" constant="20" id="3Kv-Bm-Ffz"/>
+                            <constraint firstItem="vel-ix-DDe" firstAttribute="leading" secondItem="XTo-Ll-ph1" secondAttribute="leading" constant="20" id="As9-vL-hS3"/>
+                            <constraint firstItem="n6C-zD-iqm" firstAttribute="top" secondItem="XTo-Ll-ph1" secondAttribute="top" id="XM8-p7-hVq"/>
+                            <constraint firstItem="vel-ix-DDe" firstAttribute="top" secondItem="n6C-zD-iqm" secondAttribute="bottom" constant="20" id="adj-98-ba5"/>
+                            <constraint firstItem="XTo-Ll-ph1" firstAttribute="trailing" secondItem="vel-ix-DDe" secondAttribute="trailing" constant="20" id="f6A-f1-6Ps"/>
+                            <constraint firstItem="n6C-zD-iqm" firstAttribute="leading" secondItem="XTo-Ll-ph1" secondAttribute="leading" constant="20" id="vbU-0T-gQJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XTo-Ll-ph1"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBtnOutlet" destination="vel-ix-DDe" id="A5P-aU-Tjs"/>
+                        <outlet property="unitTextField" destination="n6C-zD-iqm" id="jYk-nK-wOU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qY-A3-2VC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4843" y="15"/>
+            <point key="canvasLocation" x="4842.0289855072469" y="14.732142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZdJ-cp-cTM">

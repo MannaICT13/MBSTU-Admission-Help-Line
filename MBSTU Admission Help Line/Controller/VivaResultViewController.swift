@@ -12,6 +12,10 @@ class VivaResultViewController: UIViewController {
 
     //MARK:- Properties
     
+    @IBOutlet weak var unitTextField: UITextField!
+    @IBOutlet weak var searchBtnOutlet: UIButton!
+    
+    
     
     //MARK:-  Initializers
     
@@ -19,11 +23,16 @@ class VivaResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        Utilities.borderTextField(textField: unitTextField)
+        Utilities.roundBtnFill(button: searchBtnOutlet)
     }
     
     //MARK:- Handlers
     
-
+    @IBAction func searchBtnAction(_ sender: Any) {
+       
+    }
+    
     
 
 }
