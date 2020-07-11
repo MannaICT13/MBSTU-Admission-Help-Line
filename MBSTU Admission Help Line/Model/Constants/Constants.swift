@@ -24,6 +24,7 @@ enum Constants {
      static let viva_a = "v_a.json"
      static let viva_b = "v_b.json"
      static let  viva_c = "v_c.json"
+        
     }
     
     enum storyboardId{
@@ -36,6 +37,7 @@ enum Constants {
         
     }
     enum others{
+        
         static let mbstu_url = "https://mbstu.ac.bd/"
         static let logo = "logo.jpg"
     }

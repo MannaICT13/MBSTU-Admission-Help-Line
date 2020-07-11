@@ -49,6 +49,7 @@ class VivaResultViewController: UIViewController {
     }
     
    @objc func activityLoad(){
+    
         ActivityIndicator.showActivityIndicator(uiView: view, vc: self)
         UIView.transition(with: self.tableView, duration: 1.5, options: .transitionCrossDissolve, animations: {
             self.tableView.reloadData()
@@ -87,6 +88,34 @@ extension VivaResultViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+           cell.backgroundColor = .clear
+           cell.layer.borderWidth = 2
+           cell.layer.borderColor = UIColor.white.cgColor
+           cell.layer.masksToBounds = true
+           cell.layer.cornerRadius = 15.0
+        
+           cell.layer.shadowOpacity = 0.23
+           cell.layer.shadowRadius = 8
+           cell.layer.shadowOffset = CGSize(width: 0.0, height: 0.0)
+           cell.layer.shadowColor = UIColor.white.cgColor
+           
+        if segmentView.selectedSegmentIndex == 0{
+            cell.contentView.backgroundColor = UIColor.opaqueSeparator
+        }else if segmentView.selectedSegmentIndex == 1{
+            cell.contentView.backgroundColor = UIColor.lightGray
+        }else if segmentView.selectedSegmentIndex == 2{
+            cell.contentView.backgroundColor = UIColor.gray
+        }
+        
+        
+    }
+    
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! VivaViewCell
