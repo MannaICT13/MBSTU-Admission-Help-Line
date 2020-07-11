@@ -34,6 +34,7 @@
 		2A7FE3F224B9F46E00E1103A /* v_b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3EF24B9F46E00E1103A /* v_b.json */; };
 		2A7FE3F324B9F46E00E1103A /* v_a.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F024B9F46E00E1103A /* v_a.json */; };
 		2A7FE3F424B9F46E00E1103A /* v_c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F124B9F46E00E1103A /* v_c.json */; };
+		2A7FE3F624BA1FD300E1103A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F524BA1FD300E1103A /* ActivityIndicator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		2A7FE3EF24B9F46E00E1103A /* v_b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v_b.json; sourceTree = "<group>"; };
 		2A7FE3F024B9F46E00E1103A /* v_a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v_a.json; sourceTree = "<group>"; };
 		2A7FE3F124B9F46E00E1103A /* v_c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v_c.json; sourceTree = "<group>"; };
+		2A7FE3F524BA1FD300E1103A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				2A33A41024B74B4700E57E93 /* Utilities.swift */,
+				2A7FE3F524BA1FD300E1103A /* ActivityIndicator.swift */,
 			);
 			path = UtilitiesView;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A33A41424B7525200E57E93 /* HomeViewController.swift in Sources */,
+				2A7FE3F624BA1FD300E1103A /* ActivityIndicator.swift in Sources */,
 				2A7FE3E624B9D9B500E1103A /* VivaResultViewController.swift in Sources */,
 				2A7FE3DE24B9B92500E1103A /* ResultMode.swift in Sources */,
 				2A450E8424B8F42A00881927 /* Bundle.swift in Sources */,

@@ -35,6 +35,7 @@ class VivaResultViewController: UIViewController {
         
         manageSegmented()
         
+        
     }
     
     //MARK:- Handlers
@@ -43,7 +44,17 @@ class VivaResultViewController: UIViewController {
         segmentView.tintColor = UIColor.black
         segmentView.backgroundColor = UIColor.gray
         segmentView.selectedSegmentTintColor = UIColor.white
+        segmentView.addTarget(self, action: #selector(activityLoad), for: .valueChanged)
         
+    }
+    
+   @objc func activityLoad(){
+        ActivityIndicator.showActivityIndicator(uiView: view, vc: self)
+        UIView.transition(with: self.tableView, duration: 1.5, options: .transitionCrossDissolve, animations: {
+            self.tableView.reloadData()
+        }) { (true) in
+            ActivityIndicator.hideActivityIndicator(uiView: self.view)
+        }
     }
     
     
@@ -60,10 +71,13 @@ extension VivaResultViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        
         if segmentView.selectedSegmentIndex == 0{
+            
             return vivaResultA.count
         }else if segmentView.selectedSegmentIndex == 1{
+            
             return vivaResultB.count
         }else if segmentView.selectedSegmentIndex == 2{
+           
             return vivaResultC.count
         }
         return 0
@@ -93,7 +107,7 @@ extension VivaResultViewController : UITableViewDelegate,UITableViewDataSource{
             cell.positionLblCell.text = "POSITION:-\(vivaResultB[indexPath.row].position ?? 0)"
             cell.subjectLblCell.text = "SUBJECT:-\(vivaResultB[indexPath.row].subject ?? "n/a")"
             cell.statusLblCell.text = "STATUS:-\(vivaResultB[indexPath.row].status ?? "n/a")"
-          
+         
             
         }else if segmentView.selectedSegmentIndex == 2{
             
