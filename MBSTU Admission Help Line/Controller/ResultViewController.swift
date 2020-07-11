@@ -95,6 +95,13 @@ class ResultViewController: UIViewController {
         
         guard let roll = Int((rollTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!) else {
             print("Invalide Roll")
+            self.showAlert(title: "Error Message!", msg: "Invalide Input.")
+            rollTextField.text?.removeAll()
+            unitTextField.text?.removeAll()
+            rollLbl.text?.removeAll()
+            positionLbl.text?.removeAll()
+            scoreLbl.text?.removeAll()
+            statusLbl.text?.removeAll()
             return
         }
         
@@ -117,6 +124,13 @@ class ResultViewController: UIViewController {
            
             if (found == false){
                 print("Not Found")
+                self.showAlert(title: "Error Message!", msg: "Not Found.")
+                rollTextField.text?.removeAll()
+                unitTextField.text?.removeAll()
+                rollLbl.text?.removeAll()
+                positionLbl.text?.removeAll()
+                scoreLbl.text?.removeAll()
+                statusLbl.text?.removeAll()
             }
             
             
@@ -135,6 +149,13 @@ class ResultViewController: UIViewController {
             
             if (found == false){
                 print("Not Found")
+                self.showAlert(title: "Error Message!", msg: "Not Found.")
+                rollTextField.text?.removeAll()
+                unitTextField.text?.removeAll()
+                rollLbl.text?.removeAll()
+                positionLbl.text?.removeAll()
+                scoreLbl.text?.removeAll()
+                statusLbl.text?.removeAll()
             }
             
             
@@ -152,6 +173,13 @@ class ResultViewController: UIViewController {
             
             if (found == false){
                 print("Not Found")
+                self.showAlert(title: "Error Message!", msg: "Not Found.")
+                rollTextField.text?.removeAll()
+                unitTextField.text?.removeAll()
+                rollLbl.text?.removeAll()
+                positionLbl.text?.removeAll()
+                scoreLbl.text?.removeAll()
+                statusLbl.text?.removeAll()
             }
             
         }
@@ -196,6 +224,27 @@ extension ResultViewController : UIPickerViewDelegate,UIPickerViewDataSource {
     }
     
     
+    
+    
+    
+}
+
+extension ResultViewController {
+    
+    
+    func showAlert(title : String,msg : String){
+        
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .alert)
+        alert.setValue(NSAttributedString(string: alert.title!, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 25),NSAttributedString.Key.foregroundColor : UIColor.red]), forKey: "attributedTitle")
+        alert.setValue(NSAttributedString(string: alert.message!, attributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor : UIColor.black]), forKey: "attributedMessage")
+        
+        let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
+        
+        
+        
+    }
     
     
     
