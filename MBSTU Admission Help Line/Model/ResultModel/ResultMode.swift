@@ -1,5 +1,5 @@
 //
-//  SeatPlanModel.swift
+//  ResultMode.swift
 //  MBSTU Admission Help Line
 //
 //  Created by Md Khaled Hasan Manna on 11/7/20.
@@ -8,16 +8,15 @@
 
 import Foundation
 
-struct seatPlanModel : Codable {
-    
+struct ResultMode {
     var roll : Int?
-    var building : String?
-    var room :String?
-    var center : String?
+    var position : String?
+    var score : Double?
+    var status : String?
+    
     
     enum CodingKeys : String,CodingKey {
-        case building = "Building"
-        case room  = "Room"
-        case roll,center
+        case roll,position,score,status
     }
+    
 }

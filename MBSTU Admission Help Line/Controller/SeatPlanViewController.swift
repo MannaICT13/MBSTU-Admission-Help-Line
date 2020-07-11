@@ -112,8 +112,8 @@ class SeatPlanViewController: UIViewController {
                 if (result.roll == roll){
                    // print("\(result.center ?? "Not Found")")
                     self.rollLbl.text = "Roll:-\(roll)"
-                    self.buildingLbl.text = "Building:-\(result.Building ?? "N/A")"
-                    self.roomLbl.text = "Room:-\(result.Room ?? "N/A")"
+                    self.buildingLbl.text = "Building:-\(result.building ?? "N/A")"
+                    self.roomLbl.text = "Room:-\(result.room ?? "N/A")"
                     self.centerLbl.text = "Center:-\(result.center ?? "N/A")"
                     found = true
                     break
@@ -141,8 +141,8 @@ class SeatPlanViewController: UIViewController {
                 if (result.roll == roll){
                     // print("\(result.center ?? "Not Found")")
                     self.rollLbl.text = "Roll:-\(roll)"
-                    self.buildingLbl.text = "Building:-\(result.Building ?? "N/A")"
-                    self.roomLbl.text = "Room:-\(result.Room ?? "N/A")"
+                    self.buildingLbl.text = "Building:-\(result.building ?? "N/A")"
+                    self.roomLbl.text = "Room:-\(result.room ?? "N/A")"
                     self.centerLbl.text = "Center:-\(result.center ?? "N/A")"
                     found = true
                     break
@@ -173,8 +173,8 @@ class SeatPlanViewController: UIViewController {
                 if(result.roll == roll){
                    // print("\(result.center ?? "n/a")")
                     self.rollLbl.text = "Roll:-\(roll)"
-                    self.buildingLbl.text = "Building:-\(result.Building ?? "N/A")"
-                    self.roomLbl.text = "Room:-\(result.Room ?? "N/A")"
+                    self.buildingLbl.text = "Building:-\(result.building ?? "N/A")"
+                    self.roomLbl.text = "Room:-\(result.room ?? "N/A")"
                     self.centerLbl.text = "Center:-\(result.center ?? "N/A")"
                     found = true
                     break
