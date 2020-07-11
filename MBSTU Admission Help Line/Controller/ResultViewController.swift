@@ -29,7 +29,9 @@ class ResultViewController: UIViewController {
     
     var  arrayOfUnit : [String] = ["A","B","C"]
     
-    
+    var resultA = [ResultMode]()
+    var resultB = [ResultMode]()
+    var resultC = [ResultMode]()
     
     
     //MARK:- Initializers
@@ -38,7 +40,11 @@ class ResultViewController: UIViewController {
 
         utilitiesManager()
         managePickerView()
-    
+        self.resultA = Bundle.main.decode("r_a.json")
+        self.resultB = Bundle.main.decode("r_b.json")
+        self.resultC = Bundle.main.decode("r_c.json")
+        
+        
     }
     
     
@@ -86,6 +92,73 @@ class ResultViewController: UIViewController {
     
     
     @IBAction func searchBtnAction(_ sender: Any) {
+        
+        guard let roll = Int((rollTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!) else {
+            print("Invalide Roll")
+            return
+        }
+        
+        guard let unit = unitTextField.text else {
+            return
+        }
+        
+        if (unit.contains("A")){
+            
+            var found : Bool = false
+            
+            for result in self.resultA{
+                
+                if(result.roll == roll){
+                    print("\(result.position ?? 0)")
+                    found = true
+                    
+                }
+            }
+           
+            if (found == false){
+                print("Not Found")
+            }
+            
+            
+        }else if (unit.contains("B")){
+            
+            var found : Bool = false
+            
+            for result in self.resultB{
+                
+                if(result.roll == roll){
+                    print("\(result.position ?? 0)")
+                    found = true
+                    
+                }
+            }
+            
+            if (found == false){
+                print("Not Found")
+            }
+            
+            
+        }else if (unit.contains("C")){
+            var found : Bool = false
+            
+            for result in self.resultC{
+                
+                if(result.roll == roll){
+                    print("\(result.position ?? 0)")
+                    found = true
+                    
+                }
+            }
+            
+            if (found == false){
+                print("Not Found")
+            }
+            
+        }
+        
+        
+        
+        
         
         
         
