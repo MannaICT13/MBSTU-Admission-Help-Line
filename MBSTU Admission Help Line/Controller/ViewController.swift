@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mbstuLogoImg.image = UIImage(named: "logo.png")
+        mbstuLogoImg.image = UIImage(named: Constants.others.logo)
         mbstuLogoImg.sizeToFit()
         Utilities.roundBtnFill(button: enterBtnOutlet)
         
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     //MARK:- Handlers
     @IBAction func enterBtnAction(_ sender: Any) {
         
-        let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+        let homeVC = self.storyboard?.instantiateViewController(identifier: Constants.storyboardId.HomeViewController) as! HomeViewController
         self.navigationController?.pushViewController(homeVC, animated: true)
        
     

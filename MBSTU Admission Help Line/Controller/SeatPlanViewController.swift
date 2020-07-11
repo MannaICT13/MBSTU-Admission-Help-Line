@@ -39,9 +39,9 @@ class SeatPlanViewController: UIViewController {
          UtilitiesManager()
         
         
-        self.seatPlanResultA = Bundle.main.decode("a.json")
-        self.seatPlanResultB = Bundle.main.decode("b.json")
-        self.seatPlanResultC = Bundle.main.decode("c.json")
+        self.seatPlanResultA = Bundle.main.decode(Constants.bundleConstants.seat_a)
+        self.seatPlanResultB = Bundle.main.decode(Constants.bundleConstants.seat_b)
+        self.seatPlanResultC = Bundle.main.decode(Constants.bundleConstants.seat_c)
         
     }
     
@@ -78,7 +78,7 @@ class SeatPlanViewController: UIViewController {
     
     func UtilitiesManager(){
         
-        logoImg.image = UIImage(named: "logo.jpg")
+        logoImg.image = UIImage(named: Constants.others.logo)
         logoImg.sizeToFit()
         
         Utilities.roundBtnFill(button: searchBtnOutlet)
@@ -93,7 +93,6 @@ class SeatPlanViewController: UIViewController {
         
         guard let roll = Int((rollTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) ?? "n/a")) else {
             
-            print("Invalide Roll")
             self.showAlert(title: "Error Alert!", msg: "Invalid Charecter or number.")
             self.rollLbl.text?.removeAll()
             self.buildingLbl.text?.removeAll()
@@ -112,7 +111,7 @@ class SeatPlanViewController: UIViewController {
             for result in self.seatPlanResultA {
                 
                 if (result.roll == roll){
-                   // print("\(result.center ?? "Not Found")")
+                  
                     self.rollLbl.text = "ROLL:-\(roll)"
                     self.buildingLbl.text = "BUILDING:-\(result.building ?? "N/A")"
                     self.roomLbl.text = "ROOM:-\(result.room ?? "N/A")"
@@ -124,7 +123,7 @@ class SeatPlanViewController: UIViewController {
 
             }
             if(found == false){
-                print("Not Found!!")
+               
                 self.showAlert(title: "Error Message!", msg: "Not Found")
                 self.rollLbl.text?.removeAll()
                 self.buildingLbl.text?.removeAll()
@@ -141,7 +140,7 @@ class SeatPlanViewController: UIViewController {
                 
                 
                 if (result.roll == roll){
-                    // print("\(result.center ?? "Not Found")")
+                   
                     self.rollLbl.text = "ROLL:-\(roll)"
                     self.buildingLbl.text = "BUILDING:-\(result.building ?? "N/A")"
                     self.roomLbl.text = "ROOM:-\(result.room ?? "N/A")"
@@ -155,7 +154,7 @@ class SeatPlanViewController: UIViewController {
                 }
             
             if(found == false){
-                print("Not Found!!")
+               
                 self.showAlert(title: "Error Message!", msg: "Not Found")
                 self.rollLbl.text?.removeAll()
                 self.buildingLbl.text?.removeAll()
@@ -173,7 +172,7 @@ class SeatPlanViewController: UIViewController {
             for result in self.seatPlanResultC{
                 
                 if(result.roll == roll){
-                   // print("\(result.center ?? "n/a")")
+                  
                     self.rollLbl.text = "ROLL:-\(roll)"
                     self.buildingLbl.text = "BUILDING:-\(result.building ?? "N/A")"
                     self.roomLbl.text = "ROOM:-\(result.room ?? "N/A")"
@@ -184,7 +183,6 @@ class SeatPlanViewController: UIViewController {
             }
             if (found == false){
                 
-                print("Not Found")
                 self.showAlert(title: "Error Message!", msg: "Not Found")
                 self.rollLbl.text?.removeAll()
                 self.buildingLbl.text?.removeAll()

@@ -35,6 +35,7 @@
 		2A7FE3F324B9F46E00E1103A /* v_a.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F024B9F46E00E1103A /* v_a.json */; };
 		2A7FE3F424B9F46E00E1103A /* v_c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F124B9F46E00E1103A /* v_c.json */; };
 		2A7FE3F624BA1FD300E1103A /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F524BA1FD300E1103A /* ActivityIndicator.swift */; };
+		2A7FE3F924BA2AD300E1103A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F824BA2AD300E1103A /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		2A7FE3F024B9F46E00E1103A /* v_a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v_a.json; sourceTree = "<group>"; };
 		2A7FE3F124B9F46E00E1103A /* v_c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v_c.json; sourceTree = "<group>"; };
 		2A7FE3F524BA1FD300E1103A /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		2A7FE3F824BA2AD300E1103A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 		2A304AB324B656DA00B100F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2A7FE3F724BA2A9E00E1103A /* Constants */,
 				2A7FE3E724B9E8CE00E1103A /* VivaModel */,
 				2A7FE3DC24B9B90500E1103A /* ResultModel */,
 				2A450E8724B8FC2C00881927 /* Bundle */,
@@ -219,6 +222,14 @@
 				2A7FE3EA24B9E92900E1103A /* VivaViewCell.xib */,
 			);
 			path = VivaView;
+			sourceTree = "<group>";
+		};
+		2A7FE3F724BA2A9E00E1103A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2A7FE3F824BA2AD300E1103A /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +320,7 @@
 				2A450E8424B8F42A00881927 /* Bundle.swift in Sources */,
 				2A304AA224B655F700B100F1 /* ViewController.swift in Sources */,
 				2A304A9E24B655F700B100F1 /* AppDelegate.swift in Sources */,
+				2A7FE3F924BA2AD300E1103A /* Constants.swift in Sources */,
 				2A450E8624B8F71700881927 /* SeatPlanModel.swift in Sources */,
 				2A3B555124B9B12D00A4E7DA /* ResultViewController.swift in Sources */,
 				2A7FE3EE24B9F43F00E1103A /* VivaResultModel.swift in Sources */,

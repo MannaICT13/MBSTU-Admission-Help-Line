@@ -40,9 +40,9 @@ class ResultViewController: UIViewController {
 
         utilitiesManager()
         managePickerView()
-        self.resultA = Bundle.main.decode("r_a.json")
-        self.resultB = Bundle.main.decode("r_b.json")
-        self.resultC = Bundle.main.decode("r_c.json")
+        self.resultA = Bundle.main.decode(Constants.bundleConstants.result_a)
+        self.resultB = Bundle.main.decode(Constants.bundleConstants.result_b)
+        self.resultC = Bundle.main.decode(Constants.bundleConstants.result_c)
         
         
     }
@@ -53,7 +53,7 @@ class ResultViewController: UIViewController {
     
     func utilitiesManager(){
         
-        logoImg.image = UIImage(named: "logo.jpg")
+        logoImg.image = UIImage(named: Constants.others.logo)
         logoImg.sizeToFit()
         Utilities.borderTextField(textField: rollTextField)
         Utilities.borderTextField(textField: unitTextField)
@@ -94,7 +94,7 @@ class ResultViewController: UIViewController {
     @IBAction func searchBtnAction(_ sender: Any) {
         
         guard let roll = Int((rollTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines))!) else {
-            print("Invalide Roll")
+         
             self.showAlert(title: "Error Message!", msg: "Invalide Input.")
             rollTextField.text?.removeAll()
             unitTextField.text?.removeAll()
@@ -116,7 +116,7 @@ class ResultViewController: UIViewController {
             for result in self.resultA{
                 
                 if(result.roll == roll){
-                   // print("\(result.position ?? 0)")
+                 
                     
                     rollLbl.text = "ROLL:-\(roll)"
                     positionLbl.text = "POSITION:-\(result.position ?? 0)"
@@ -129,7 +129,7 @@ class ResultViewController: UIViewController {
             }
            
             if (found == false){
-                print("Not Found")
+             
                 self.showAlert(title: "Error Message!", msg: "Not Found.")
                 rollTextField.text?.removeAll()
                 unitTextField.text?.removeAll()
@@ -187,7 +187,7 @@ class ResultViewController: UIViewController {
             }
             
             if (found == false){
-                print("Not Found")
+              
                 self.showAlert(title: "Error Message!", msg: "Not Found.")
                 rollTextField.text?.removeAll()
                 unitTextField.text?.removeAll()

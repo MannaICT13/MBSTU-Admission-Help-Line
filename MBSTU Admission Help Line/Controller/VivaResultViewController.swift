@@ -27,9 +27,9 @@ class VivaResultViewController: UIViewController {
         super.viewDidLoad()
         
         
-        vivaResultA = Bundle.main.decode("v_a.json")
-        vivaResultB = Bundle.main.decode("v_b.json")
-        vivaResultC = Bundle.main.decode("v_c.json")
+        vivaResultA = Bundle.main.decode(Constants.bundleConstants.viva_a)
+        vivaResultB = Bundle.main.decode(Constants.bundleConstants.viva_b)
+        vivaResultC = Bundle.main.decode(Constants.bundleConstants.viva_c)
         
         self.tableView.register(UINib(nibName: "VivaViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         

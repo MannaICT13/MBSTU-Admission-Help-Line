@@ -17,11 +17,13 @@ class VivaViewCell: UITableViewCell {
     @IBOutlet weak var subjectLblCell: UILabel!
     @IBOutlet weak var statusLblCell: UILabel!
     
-    
+ 
     //MARK:- Initializers
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+       
+       
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -66,7 +66,7 @@ class HomeViewController: UIViewController {
     
     func utilitieManager(){
         
-        logoImage.image = UIImage(named: "logo.png")
+        logoImage.image = UIImage(named: Constants.others.logo)
         Utilities.roundBtnFill(button: seatPlanBtnOutlet)
         Utilities.roundBtnFill(button: resultBtnOutlet)
         Utilities.roundBtnFill(button: vivaBtnOutlet)
@@ -75,24 +75,24 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func seatPlanBtnAction(_ sender: Any) {
-        let seatVC = self.storyboard?.instantiateViewController(identifier: "SeatPlanViewController") as! SeatPlanViewController
+        let seatVC = self.storyboard?.instantiateViewController(identifier: Constants.storyboardId.SeatPlanViewController) as! SeatPlanViewController
         self.navigationController?.pushViewController(seatVC, animated: true)
         
     }
     @IBAction func resultBtnAction(_ sender: Any) {
-        let resultVC = self.storyboard?.instantiateViewController(identifier: "ResultViewController") as! ResultViewController
+        let resultVC = self.storyboard?.instantiateViewController(identifier: Constants.storyboardId.ResultViewController) as! ResultViewController
         self.navigationController?.pushViewController(resultVC, animated: true)
         
     }
     
     @IBAction func vivaBtnAction(_ sender: Any) {
-        let vivaVC = self.storyboard?.instantiateViewController(identifier: "VivaResultViewController") as! VivaResultViewController
+        let vivaVC = self.storyboard?.instantiateViewController(identifier: Constants.storyboardId.VivaResultViewController) as! VivaResultViewController
         self.navigationController?.pushViewController(vivaVC, animated: true)
     }
     
     @IBAction func varsityWebBtnAction(_ sender: Any) {
         
-        if let url = URL(string: "https://mbstu.ac.bd/"){
+        if let url = URL(string: Constants.others.mbstu_url){
             UIApplication.shared.open(url)
         }
         
