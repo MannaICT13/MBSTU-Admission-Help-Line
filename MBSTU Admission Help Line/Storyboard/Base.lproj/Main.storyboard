@@ -491,6 +491,10 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-y5-5nt">
                                 <rect key="frame" x="0.0" y="202" width="414" height="660"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1hq-gg-rzE" id="F7m-Tr-YEf"/>
+                                    <outlet property="delegate" destination="1hq-gg-rzE" id="2pa-b2-oTU"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search Result Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fSx-WD-yA6">
                                 <rect key="frame" x="20" y="174" width="374" height="20"/>
@@ -519,6 +523,7 @@
                     </view>
                     <connections>
                         <outlet property="searchBtnOutlet" destination="vel-ix-DDe" id="A5P-aU-Tjs"/>
+                        <outlet property="tableView" destination="0pk-y5-5nt" id="yUy-b3-DmH"/>
                         <outlet property="unitTextField" destination="n6C-zD-iqm" id="jYk-nK-wOU"/>
                     </connections>
                 </viewController>
