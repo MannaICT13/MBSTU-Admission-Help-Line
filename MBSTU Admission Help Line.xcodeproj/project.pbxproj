@@ -30,6 +30,10 @@
 		2A7FE3E624B9D9B500E1103A /* VivaResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E524B9D9B500E1103A /* VivaResultViewController.swift */; };
 		2A7FE3EB24B9E92900E1103A /* VivaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E924B9E92900E1103A /* VivaViewCell.swift */; };
 		2A7FE3EC24B9E92900E1103A /* VivaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3EA24B9E92900E1103A /* VivaViewCell.xib */; };
+		2A7FE3EE24B9F43F00E1103A /* VivaResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3ED24B9F43F00E1103A /* VivaResultModel.swift */; };
+		2A7FE3F224B9F46E00E1103A /* v_b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3EF24B9F46E00E1103A /* v_b.json */; };
+		2A7FE3F324B9F46E00E1103A /* v_a.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F024B9F46E00E1103A /* v_a.json */; };
+		2A7FE3F424B9F46E00E1103A /* v_c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3F124B9F46E00E1103A /* v_c.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		2A7FE3E524B9D9B500E1103A /* VivaResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivaResultViewController.swift; sourceTree = "<group>"; };
 		2A7FE3E924B9E92900E1103A /* VivaViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivaViewCell.swift; sourceTree = "<group>"; };
 		2A7FE3EA24B9E92900E1103A /* VivaViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VivaViewCell.xib; sourceTree = "<group>"; };
+		2A7FE3ED24B9F43F00E1103A /* VivaResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivaResultModel.swift; sourceTree = "<group>"; };
+		2A7FE3EF24B9F46E00E1103A /* v_b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v_b.json; sourceTree = "<group>"; };
+		2A7FE3F024B9F46E00E1103A /* v_a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v_a.json; sourceTree = "<group>"; };
+		2A7FE3F124B9F46E00E1103A /* v_c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = v_c.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +201,10 @@
 		2A7FE3E724B9E8CE00E1103A /* VivaModel */ = {
 			isa = PBXGroup;
 			children = (
+				2A7FE3ED24B9F43F00E1103A /* VivaResultModel.swift */,
+				2A7FE3F024B9F46E00E1103A /* v_a.json */,
+				2A7FE3EF24B9F46E00E1103A /* v_b.json */,
+				2A7FE3F124B9F46E00E1103A /* v_c.json */,
 			);
 			path = VivaModel;
 			sourceTree = "<group>";
@@ -265,8 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2A450E8924B8FD8A00881927 /* b.json in Resources */,
+				2A7FE3F424B9F46E00E1103A /* v_c.json in Resources */,
 				2A304AAA24B655FD00B100F1 /* LaunchScreen.storyboard in Resources */,
+				2A7FE3F324B9F46E00E1103A /* v_a.json in Resources */,
 				2A7FE3E424B9BCC000E1103A /* r_c.json in Resources */,
+				2A7FE3F224B9F46E00E1103A /* v_b.json in Resources */,
 				2A7FE3E324B9BCC000E1103A /* r_a.json in Resources */,
 				2A304AA724B655FD00B100F1 /* Assets.xcassets in Resources */,
 				2A7FE3E224B9BCC000E1103A /* r_b.json in Resources */,
@@ -292,6 +307,7 @@
 				2A304A9E24B655F700B100F1 /* AppDelegate.swift in Sources */,
 				2A450E8624B8F71700881927 /* SeatPlanModel.swift in Sources */,
 				2A3B555124B9B12D00A4E7DA /* ResultViewController.swift in Sources */,
+				2A7FE3EE24B9F43F00E1103A /* VivaResultModel.swift in Sources */,
 				2A7FE3EB24B9E92900E1103A /* VivaViewCell.swift in Sources */,
 				2A33A41924B7B20F00E57E93 /* AutoImageSliderCell.swift in Sources */,
 				2A33A41124B74B4700E57E93 /* Utilities.swift in Sources */,
