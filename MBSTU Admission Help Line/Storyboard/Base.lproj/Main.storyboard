@@ -341,7 +341,7 @@
         <!--Result View Controller-->
         <scene sceneID="Qyn-dc-44f">
             <objects>
-                <viewController id="O09-RT-GfF" customClass="ResultViewController" customModule="MBSTU_Admission_Help_Line" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="O09-RT-GfF" customClass="ResultViewController" customModule="MBSTU_Admission_Help_Line" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z6V-b6-dLa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -80,6 +80,8 @@ class HomeViewController: UIViewController {
         
     }
     @IBAction func resultBtnAction(_ sender: Any) {
+        let resultVC = self.storyboard?.instantiateViewController(identifier: "ResultViewController") as! ResultViewController
+        self.navigationController?.pushViewController(resultVC, animated: true)
         
     }
     
