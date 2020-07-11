@@ -25,7 +25,9 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var statusLbl: UILabel!
     
     
+    var unitPicker : UIPickerView!
     
+    var  arrayOfUnit : [String] = ["A","B","C"]
     
     
     
@@ -35,6 +37,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
 
         utilitiesManager()
+        managePickerView()
     
     }
     
@@ -52,6 +55,35 @@ class ResultViewController: UIViewController {
         
         
     }
+    
+    
+    func managePickerView(){
+        
+        unitPicker = UIPickerView()
+        
+//        unitPicker.delegate = self
+//        unitPicker.dataSource = self
+        
+        
+        let toolBar = UIToolbar()
+        toolBar.sizeToFit()
+        
+        let done = UIBarButtonItem(title: "Done", style: .done, target: self, action: #selector(action))
+        
+        toolBar.setItems([done], animated: true)
+        
+        unitTextField.inputView = unitPicker
+        unitTextField.inputAccessoryView = toolBar
+        
+        
+        
+    }
+    
+    @objc func action(){
+        self.view.endEditing(true)
+    }
+    
+    
     
     @IBAction func searchBtnAction(_ sender: Any) {
         
