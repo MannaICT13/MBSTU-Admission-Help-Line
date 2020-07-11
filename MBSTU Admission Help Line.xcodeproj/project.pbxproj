@@ -24,6 +24,9 @@
 		2A450E8924B8FD8A00881927 /* b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A450E8824B8FD8A00881927 /* b.json */; };
 		2A450E8B24B8FD9400881927 /* c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A450E8A24B8FD9400881927 /* c.json */; };
 		2A7FE3DE24B9B92500E1103A /* ResultMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7FE3DD24B9B92500E1103A /* ResultMode.swift */; };
+		2A7FE3E224B9BCC000E1103A /* r_b.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3DF24B9BCC000E1103A /* r_b.json */; };
+		2A7FE3E324B9BCC000E1103A /* r_a.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E024B9BCC000E1103A /* r_a.json */; };
+		2A7FE3E424B9BCC000E1103A /* r_c.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A7FE3E124B9BCC000E1103A /* r_c.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		2A450E8824B8FD8A00881927 /* b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = b.json; sourceTree = "<group>"; };
 		2A450E8A24B8FD9400881927 /* c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = c.json; sourceTree = "<group>"; };
 		2A7FE3DD24B9B92500E1103A /* ResultMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultMode.swift; sourceTree = "<group>"; };
+		2A7FE3DF24B9BCC000E1103A /* r_b.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r_b.json; sourceTree = "<group>"; };
+		2A7FE3E024B9BCC000E1103A /* r_a.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r_a.json; sourceTree = "<group>"; };
+		2A7FE3E124B9BCC000E1103A /* r_c.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = r_c.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +174,9 @@
 			isa = PBXGroup;
 			children = (
 				2A7FE3DD24B9B92500E1103A /* ResultMode.swift */,
+				2A7FE3E024B9BCC000E1103A /* r_a.json */,
+				2A7FE3DF24B9BCC000E1103A /* r_b.json */,
+				2A7FE3E124B9BCC000E1103A /* r_c.json */,
 			);
 			path = ResultModel;
 			sourceTree = "<group>";
@@ -232,7 +241,10 @@
 			files = (
 				2A450E8924B8FD8A00881927 /* b.json in Resources */,
 				2A304AAA24B655FD00B100F1 /* LaunchScreen.storyboard in Resources */,
+				2A7FE3E424B9BCC000E1103A /* r_c.json in Resources */,
+				2A7FE3E324B9BCC000E1103A /* r_a.json in Resources */,
 				2A304AA724B655FD00B100F1 /* Assets.xcassets in Resources */,
+				2A7FE3E224B9BCC000E1103A /* r_b.json in Resources */,
 				2A450E8B24B8FD9400881927 /* c.json in Resources */,
 				2A304AA524B655F700B100F1 /* Main.storyboard in Resources */,
 				2A450E8224B8F3AA00881927 /* a.json in Resources */,

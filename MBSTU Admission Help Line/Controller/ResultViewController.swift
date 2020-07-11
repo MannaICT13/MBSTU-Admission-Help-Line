@@ -34,11 +34,24 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        utilitiesManager()
+    
     }
     
     
+    //MARK:- Handlers
     
+    
+    func utilitiesManager(){
+        
+        logoImg.image = UIImage(named: "logo.jpg")
+        logoImg.sizeToFit()
+        Utilities.borderTextField(textField: rollTextField)
+        Utilities.borderTextField(textField: unitTextField)
+        Utilities.roundBtnFill(button: searchBtnOutlet)
+        
+        
+    }
     
     @IBAction func searchBtnAction(_ sender: Any) {
         

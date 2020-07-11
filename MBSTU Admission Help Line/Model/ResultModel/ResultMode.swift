@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct ResultMode {
+struct ResultMode : Codable{
     var roll : Int?
-    var position : String?
+    var position : Int?
     var score : Double?
     var status : String?
     
