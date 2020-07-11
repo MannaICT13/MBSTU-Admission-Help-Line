@@ -116,7 +116,13 @@ class ResultViewController: UIViewController {
             for result in self.resultA{
                 
                 if(result.roll == roll){
-                    print("\(result.position ?? 0)")
+                   // print("\(result.position ?? 0)")
+                    
+                    rollLbl.text = "ROLL:-\(roll)"
+                    positionLbl.text = "POSITION:-\(result.position ?? 0)"
+                    scoreLbl.text = "SCORE:-\(result.score ?? 0.0)"
+                    statusLbl.text = "STATUS:-\(result.status ?? "n/a")"
+                    
                     found = true
                     
                 }
@@ -141,7 +147,12 @@ class ResultViewController: UIViewController {
             for result in self.resultB{
                 
                 if(result.roll == roll){
-                    print("\(result.position ?? 0)")
+                  //  print("\(result.position ?? 0)")
+                    rollLbl.text = "ROLL:-\(roll)"
+                    positionLbl.text = "POSITION:-\(result.position ?? 0)"
+                    scoreLbl.text = "SCORE:-\(result.score ?? 0.0)"
+                    statusLbl.text = "STATUS:-\(result.status ?? "n/a")"
+                    
                     found = true
                     
                 }
@@ -165,7 +176,11 @@ class ResultViewController: UIViewController {
             for result in self.resultC{
                 
                 if(result.roll == roll){
-                    print("\(result.position ?? 0)")
+                  //  print("\(result.position ?? 0)")
+                    rollLbl.text = "ROLL:-\(roll)"
+                    positionLbl.text = "POSITION:-\(result.position ?? 0)"
+                    scoreLbl.text = "SCORE:-\(result.score ?? 0.0)"
+                    statusLbl.text = "STATUS:-\(result.status ?? "n/a")"
                     found = true
                     
                 }
