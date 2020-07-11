@@ -1,92 +1,92 @@
 [
  {
      "roll" : 100001,
-     "position" : 100,
+     "position" : 10,
      "score" : 95.0,
      "status":"Selected"
  },
  {
      "roll" : 100002,
-     "position" : 100,
-     "score" : 95.0,
+     "position" : 15,
+     "score" : 94.0,
      "status":"Selected"
  },
  {
      "roll" : 100003,
-     "position" : 100,
-     "score" : 95.0,
+     "position" : 30,
+     "score" : 90.50,
      "status":"Selected"
  },
  {
      "roll" : 100004,
-     "position" : 100,
-     "score" : 95.0,
+     "position" : 120,
+     "score" : 87.0,
      "status":"Selected"
  },
  {
      "roll" : 100005,
      "position" : 100,
-     "score" : 95.0,
+     "score" : 80.0,
      "status":"Selected"
  },
  {
      "roll" : 100006,
-     "position" : 100,
-     "score" : 95.0,
-     "status":"Selected"
+     "position" : 260,
+     "score" : 75.0,
+     "status":"Waiting"
  },
  {
      "roll" : 100007,
-     "position" : 100,
-     "score" : 95.0,
-     "status":"Selected"
+     "position" : 279,
+     "score" : 70.50,
+     "status":"Waiting"
  },
  {
      "roll" : 100008,
-     "position" : 100,
-     "score" : 95.0,
-     "status":"Selected"
+     "position" : 0,
+     "score" : 39,
+     "status":"Fail"
  },
  {
      "roll" : 100009,
-     "position" : 100,
-     "score" : 95.0,
-     "status":"Selected"
+     "position" : 300,
+     "score" : 60.0,
+     "status":"Waiting"
  },
  {
      "roll" : 1000010,
-     "position" : 100,
-     "score" : 95.0,
+     "position" : 150,
+     "score" : 88.0,
      "status":"Selected"
  },
  {
      "roll" : 1000011,
-     "position" : 100,
-     "score" : 95.0,
+     "position" : 10,
+     "score" : 94.0,
      "status":"Selected"
  },
  {
      "roll" : 1000012,
-     "position" : 100,
-     "score" : 95.0,
+     "position" : 150,
+     "score" : 78,
      "status":"Selected"
  },
  {
      "roll" : 1000013,
-     "position" : 100,
-     "score" : 95.0,
-     "status":"Selected"
+     "position" : 0,
+     "score" : 20.75,
+     "status":"Fail"
  },
  {
      "roll" : 1000014,
-     "position" : 100,
-     "score" : 95.0,
-     "status":"Selected"
+     "position" : 0,
+     "score" : 33,
+     "status":"Fail"
  },
  {
      "roll" : 1000015,
-     "position" : 100,
-     "score" : 95.0,
+     "position" : 22,
+     "score" : 94.0,
      "status":"Selected"
  }
  

@@ -1,92 +1,92 @@
 [
  {
      "roll" : 200001,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 10,
+     "subject" : "Chemistry",
      "status":"Selected"
  },
  {
      "roll" : 200002,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 17,
+     "subject" : "Mathematics",
      "status":"Selected"
  },
  {
      "roll" : 200003,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 57,
+     "subject" : "Physics",
      "status":"Selected"
  },
  {
      "roll" : 200004,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 80,
+     "subject" : "Chemistry",
      "status":"Selected"
  },
  {
      "roll" : 200005,
      "position" : 100,
-     "subject" : "ICT",
+     "subject" : "Mathematics",
      "status":"Selected"
  },
  {
      "roll" : 200006,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 123,
+     "subject" : "Physics",
      "status":"Selected"
  },
  {
      "roll" : 200007,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 145,
+     "subject" : "Chemistry",
      "status":"Selected"
  },
  {
      "roll" : 200008,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 157,
+     "subject" : "Physics",
      "status":"Selected"
  },
  {
      "roll" : 200009,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 33,
+     "subject" : "Mathematics",
      "status":"Selected"
  },
  {
      "roll" : 2000010,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 450,
+     "subject" : "Statistics",
      "status":"Selected"
  },
  {
      "roll" : 2000011,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 121,
+     "subject" : "Statistics",
      "status":"Selected"
  },
  {
      "roll" : 2000012,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 55,
+     "subject" : "Chemistry",
      "status":"Selected"
  },
  {
      "roll" : 2000013,
-     "position" : 100,
-     "subject" : "ICT",
-     "status":"Selected"
+     "position" : 340,
+     "subject" : "Statistics",
+     "status":"Waiting"
  },
  {
      "roll" : 2000014,
-     "position" : 100,
-     "subject" : "ICT",
-     "status":"Selected"
+     "position" : 222,
+     "subject" : "Statistics",
+     "status":"Waiting"
  },
  {
      "roll" : 2000015,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 166,
+     "subject" : "Mathematics",
      "status":"Selected"
  }
  

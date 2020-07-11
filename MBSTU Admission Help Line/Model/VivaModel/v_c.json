@@ -1,93 +1,93 @@
 [
  {
      "roll" : 300001,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 1,
+     "subject" : "Pharmacy",
      "status":"Selected"
  },
  {
      "roll" : 300002,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 12,
+     "subject" : "Pharmacy",
      "status":"Selected"
  },
  {
      "roll" : 300003,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 15,
+     "subject" : "Pharmacy",
      "status":"Selected"
  },
  {
      "roll" : 300004,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 59,
+     "subject" : "BGE",
      "status":"Selected"
  },
  {
      "roll" : 300005,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 46,
+     "subject" : "BGE",
      "status":"Selected"
  },
  {
      "roll" : 100006,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 123,
+     "subject" : "CPS",
      "status":"Selected"
  },
  {
      "roll" : 300007,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 234,
+     "subject" : "FTNS",
      "status":"Selected"
  },
  {
      "roll" : 300008,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 237,
+     "subject" : "FTNS",
      "status":"Selected"
  },
  {
      "roll" : 300009,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 33,
+     "subject" : "Pharmacy",
      "status":"Selected"
  },
  {
      "roll" : 3000010,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 231,
+     "subject" : "FTNS",
      "status":"Selected"
  },
  {
      "roll" : 1000011,
-     "position" : 100,
-     "subject" : "ICT",
-     "status":"Selected"
+     "position" : 450,
+     "subject" : "CPS",
+     "status":"Waiting"
  },
  {
      "roll" : 3000012,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 22,
+     "subject" : "CPS",
      "status":"Selected"
  },
  {
      "roll" : 3000013,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 57,
+     "subject" : "BGE",
      "status":"Selected"
  },
  {
      "roll" : 3000014,
-     "position" : 100,
-     "subject" : "ICT",
-     "status":"Selected"
+     "position" : 333,
+     "subject" : "CPS",
+     "status":"Waiting"
  },
  {
      "roll" : 3000015,
-     "position" : 100,
-     "subject" : "ICT",
-     "status":"Selected"
+     "position" : 345,
+     "subject" : "CPS",
+     "status":"Waiting"
  }
  
 ]

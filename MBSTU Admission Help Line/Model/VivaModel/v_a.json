@@ -1,31 +1,31 @@
 [
  {
      "roll" : 100001,
-     "position" : 100,
+     "position" : 10,
      "subject" : "ICT",
      "status":"Selected"
  },
  {
      "roll" : 100002,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" :120,
+     "subject" : "CSE",
      "status":"Selected"
  },
  {
      "roll" : 100003,
-     "position" : 100,
+     "position" : 110,
      "subject" : "ICT",
      "status":"Selected"
  },
  {
      "roll" : 100004,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 115,
+     "subject" : "TE",
      "status":"Selected"
  },
  {
      "roll" : 100005,
-     "position" : 100,
+     "position" : 150,
      "subject" : "ICT",
      "status":"Selected"
  },
@@ -37,57 +37,57 @@
  },
  {
      "roll" : 100007,
-     "position" : 100,
+     "position" : 102,
      "subject" : "ICT",
      "status":"Selected"
  },
  {
      "roll" : 100008,
-     "position" : 100,
-     "subject" : "ICT",
-     "status":"Selected"
+     "position" : 180,
+     "subject" : "CSE",
+     "status":"Waiting"
  },
  {
      "roll" : 100009,
-     "position" : 100,
-     "subject" : "ICT",
-     "status":"Selected"
+     "position" : 239,
+     "subject" : "TE",
+     "status":"Waiting"
  },
  {
      "roll" : 1000010,
-     "position" : 100,
+     "position" : 156,
      "subject" : "ICT",
      "status":"Selected"
  },
  {
      "roll" : 1000011,
-     "position" : 100,
+     "position" : 17,
      "subject" : "ICT",
      "status":"Selected"
  },
  {
      "roll" : 1000012,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 120,
+     "subject" : "TE",
      "status":"Selected"
  },
  {
      "roll" : 1000013,
-     "position" : 100,
-     "subject" : "ICT",
+     "position" : 111,
+     "subject" : "CSE",
      "status":"Selected"
  },
  {
      "roll" : 1000014,
-     "position" : 100,
+     "position" : 1,
      "subject" : "ICT",
      "status":"Selected"
  },
  {
      "roll" : 1000015,
-     "position" : 100,
-     "subject" : "ICT",
-     "status":"Selected"
+     "position" : 170,
+     "subject" : "TE",
+     "status":"Waiting"
  }
  
 ]
